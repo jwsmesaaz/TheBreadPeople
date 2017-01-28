@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D9C35026-0FFD-4994-B6B5-D5CFC21DAD5D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>The_Bread_People</RootNamespace>
+    <AssemblyName>The Bread People</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AboutUs.aspx" />
+    <Content Include="AboutUs.aspx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="commenter.swf" />
+    <Content Include="ContactUs.aspx" />
+    <Content Include="ContactUs.aspx.vb" />
+    <Content Include="default.aspx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Feedback.aspx" />
+    <Content Include="Feedback.aspx.vb" />
+    <Content Include="MasterPage.master.vb" />
+    <Content Include="Media\Music\10 I Get Around.mp3" />
+    <Content Include="Pictures.aspx" />
+    <Content Include="Pictures.aspx.vb" />
+    <Content Include="Pictures\Background\UnderBread.JPG" />
+    <Content Include="Pictures\Background\UpperBread.JPG" />
+    <Content Include="Pictures\Background\~bread.jpg" />
+    <Content Include="Pictures\Background\~bread2.jpg" />
+    <Content Include="Pictures\Picture Page\breadArticle.jpg" />
+    <Content Include="Pictures\Picture Page\breadArticleLarge.jpg" />
+    <Content Include="Pictures\Picture Page\breadArticleLarge1.jpg" />
+    <Content Include="Pictures\Picture Page\Family.jpg" />
+    <Content Include="Pictures\Picture Page\Family1.JPG" />
+    <Content Include="Pictures\Picture Page\LeftPage.jpg" />
+    <Content Include="Pictures\Picture Page\RightPage.jpg" />
+    <Content Include="Pictures\Picture Page\row1col1.jpg" />
+    <Content Include="Pictures\Picture Page\row1col2.jpg" />
+    <Content Include="Pictures\Picture Page\row1col3.jpg" />
+    <Content Include="Pictures\Picture Page\row1col4.jpg" />
+    <Content Include="Pictures\Picture Page\row1col5.jpg" />
+    <Content Include="Pictures\Picture Page\row2col1.jpg" />
+    <Content Include="Pictures\Picture Page\row2col2.jpg" />
+    <Content Include="Pictures\Picture Page\row2col3.jpg" />
+    <Content Include="Pictures\Picture Page\row2col4.jpg" />
+    <Content Include="Pictures\Picture Page\row2col5.jpg" />
+    <Content Include="Pictures\Picture Page\row3col1.jpg" />
+    <Content Include="Pictures\Picture Page\row3col2.jpg" />
+    <Content Include="Pictures\Picture Page\row3col3.jpg" />
+    <Content Include="Pictures\Picture Page\row3col4.jpg" />
+    <Content Include="Pictures\Picture Page\row3col5.jpg" />
+    <Content Include="Pictures\Picture Page\row4col1.jpg" />
+    <Content Include="Pictures\Picture Page\row4col2.jpg" />
+    <Content Include="Pictures\Picture Page\row4col3.jpg" />
+    <Content Include="Pictures\Picture Page\row4col4.jpg" />
+    <Content Include="Pictures\Picture Page\row4col5.jpg" />
+    <Content Include="Pictures\Picture Page\row5col1.jpg" />
+    <Content Include="Pictures\Picture Page\row5col2.jpg" />
+    <Content Include="Pictures\Picture Page\row5col3.jpg" />
+    <Content Include="Pictures\Picture Page\row5col4.jpg" />
+    <Content Include="Pictures\Picture Page\row5col5.jpg" />
+    <Content Include="Pictures\Picture Page\row6col1.jpg" />
+    <Content Include="Pictures\Picture Page\row6col2.jpg" />
+    <Content Include="Pictures\Picture Page\row6col3.jpg" />
+    <Content Include="Pictures\Picture Page\row6col4.JPG" />
+    <Content Include="Pictures\Picture Page\row6col5.jpg" />
+    <Content Include="Pictures\Products\0319091716b.jpg" />
+    <Content Include="Pictures\Products\0319091716c.jpg" />
+    <Content Include="Pictures\Products\0319091717a.jpg" />
+    <Content Include="Pictures\Products\anisha phone 003.jpg" />
+    <Content Include="Pictures\Products\anisha phone 007.jpg" />
+    <Content Include="Pictures\Products\anisha phone 008.jpg" />
+    <Content Include="Pictures\Products\anisha phone 009.jpg" />
+    <Content Include="Pictures\Products\Banana Bread.jpg" />
+    <Content Include="Pictures\Products\bread.jpg" />
+    <Content Include="Pictures\Products\Cinnamon rolls.jpg" />
+    <Content Include="Pictures\Products\DSC03927.JPG" />
+    <Content Include="Pictures\Products\DSC03928.JPG" />
+    <Content Include="Pictures\Products\DSC03929.JPG" />
+    <Content Include="Pictures\Products\DSC03930.JPG" />
+    <Content Include="Pictures\Products\DSC03931.JPG" />
+    <Content Include="Pictures\Products\DSC03932.JPG" />
+    <Content Include="Pictures\Products\DSC03933.JPG" />
+    <Content Include="Pictures\Products\DSC03934.JPG" />
+    <Content Include="Pictures\Products\DSC03935.JPG" />
+    <Content Include="Pictures\Products\DSC03936.JPG" />
+    <Content Include="Pictures\Products\Garlic.jpg" />
+    <Content Include="Pictures\Products\IMG00103-20100805-1640.jpg" />
+    <Content Include="Pictures\Products\IMG00104-20100805-1640.jpg" />
+    <Content Include="Pictures\Products\IMG00105-20100805-1641.jpg" />
+    <Content Include="Pictures\Products\IMG00110-20100805-1644.jpg" />
+    <Content Include="Pictures\Products\sourdough.jpg" />
+    <Content Include="Pictures\Products\Swiss Bread.jpg" />
+    <Content Include="Pictures\Products\Wheat Bread Small.jpg" />
+    <Content Include="Products.aspx" />
+    <Content Include="Products.aspx.vb" />
+    <Content Include="Questions.aspx" />
+    <Content Include="Questions.aspx.vb" />
+    <Content Include="StyleSheet.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="The Bread People.accdb" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="bin\" />
+    <Folder Include="Media\Video\" />
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="apendComments.php" />
+    <None Include="getAllComments.php" />
+    <Content Include="MasterPage.master" />
+    <None Include="Media.aspx.exclude" />
+    <None Include="Media.aspx.vb.exclude" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="Orders.aspx.exclude" />
+    <None Include="Orders.aspx.vb.exclude" />
+    <None Include="Pictures\Price List- The Bread People 7-17-2010.docx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>42165</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

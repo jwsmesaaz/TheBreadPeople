@@ -1,0 +1,104 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Master Page</title>
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="swfobject.js"></script>
+    <script type="text/javascript">swfobject.registerObject("myFlashContent", "9.0.0", "expressInstall.swf");</script>
+    <style type="text/css">
+      
+    </style>
+    
+    </head>
+<body background="Pictures/Background/UnderBread.JPG">
+    
+    <table class="link1" width="1024" align="center">
+        <tr class="link1">            
+            <td>
+                <a href="default.aspx">Home</a>
+            </td>
+            <td>
+                <a href="AboutUs.aspx">About Us</a>
+            </td>
+            <td>
+                <a href="Products.aspx">Products</a>
+            </td>
+            <td>
+                <a href="Questions.aspx">Questions</a>
+            </td>
+            <td>
+                <a href="ContactUs.aspx">Contact Us</a>
+            </td>
+            <td>
+                <a href="Feedback.aspx">Feedback</a>
+            </td>
+            <td>
+                <a href="Pictures.aspx">Pictures</a>
+            </td>
+            
+        </tr>
+    </table>
+    <table align="center" width="1024" style="border-style: none">
+        <tr style="border-style: none">
+            <td class="header" rowspan="6" style="border-style: none">
+                <img alt="" src="Pictures/Picture%20Page/LeftPage.jpg" style="width: 159px; height: 160px" />
+            </td>            
+            <td class="header" style="border-style: none; border-color: #000099;" height="39">
+                THE BREAD PEOPLE
+            </td> 
+            <td class="header" rowspan="6" style="border-style: none">
+                <img alt="" src="Pictures/Picture%20Page/RightPage.jpg" style="width: 159px; height: 160px" />
+            </td>
+        </tr>
+        <tr>
+            <td class="subheader" align="center"  height="39">
+                Fresh Homemade Swiss Braided Bread</td>            
+                      
+        </tr>
+        <tr>            
+            <td class="subheader" height="39">
+                &nbsp;Delivered to your Home and Business Daily</td>
+            
+        </tr>
+        <tr>            
+            <td class="subheader" height="39" width="706">
+                755 E Broadway Road Mesa, Arizona 85204             </td>
+            
+        </tr>    
+        
+        
+        <tr>            
+            <td class="Phone" height="39" width="706" align="center">
+                <table style="width: 100%">
+                    <tr>
+                        <td class="style1">
+                            480-600-3235</td>
+                        <td class="style2">
+                            &nbsp;</td>
+                        <td class="header">
+                            <a href="http://thebreadpeople.com/default.aspx">thebreadpeople.com</a></td>
+                    </tr>
+                </table>
+            </td>
+            
+        </tr>    
+        
+        
+    </table>      
+    <br />      
+        
+                <asp:ContentPlaceHolder id="head" runat="server">                    
+                </asp:ContentPlaceHolder>
+                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">        
+                </asp:ContentPlaceHolder>
+                <asp:ContentPlaceHolder id="ContentPlaceHolder3" runat="server">        
+                </asp:ContentPlaceHolder>
+    
+        
+    </body>
+    
+</html>

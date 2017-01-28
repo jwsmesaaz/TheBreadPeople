@@ -1,0 +1,166 @@
+﻿
+Partial Class _Default
+
+    Inherits System.Web.UI.Page
+
+    Protected Sub DropDownList1_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles DropDownList1.SelectedIndexChanged
+        Dim Costbx1 As Int32
+        If (DropDownList1.SelectedValue = "smSwiss") Then Costbx1 = 3
+        If (DropDownList1.SelectedValue = "lgSwiss") Then Costbx1 = 5
+        If (DropDownList1.SelectedValue = "banana") Then Costbx1 = 6
+        If (DropDownList1.SelectedValue = "lgGarlic") Then Costbx1 = 6
+        If (DropDownList1.SelectedValue = "lgSourdough") Then Costbx1 = 6
+        If (DropDownList1.SelectedValue = "lgWheat") Then Costbx1 = 6
+        If (DropDownList1.SelectedValue = "plOatmeal") Then Costbx1 = 6
+        If (DropDownList1.SelectedValue = "ccOatmeal") Then Costbx1 = 6
+        If (DropDownList1.SelectedValue = "3Cinnamon") Then Costbx1 = 10
+        If (DropDownList1.SelectedValue = "6Cinnamon") Then Costbx1 = 20
+        If (DropDownList1.SelectedValue = "12Cinnamon") Then Costbx1 = 35
+
+        CostBox1.Text = "$" & Costbx1 'Adds value to CostBox
+        Dim TotalValue As Integer 'Makes a variable
+        TotalValue = Convert.ToDouble(Costbx1) + Convert.ToDouble(DropDownList2.SelectedValue) + Convert.ToDouble(DropDownList3.SelectedValue) + Convert.ToDouble(DropDownList4.SelectedValue) + Convert.ToDouble(DropDownList5.SelectedValue) + Convert.ToDouble(DropDownList6.SelectedValue) + Convert.ToDouble(DropDownList7.SelectedValue) + Convert.ToDouble(DropDownList8.SelectedValue) + Convert.ToDouble(DropDownList9.SelectedValue) + Convert.ToDouble(DropDownList10.SelectedValue)
+        'Adds up the totals
+        TotalBox.Text = "$" & TotalValue ' Places the total into the total Box
+    End Sub
+
+    Protected Sub DropDownList2_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles DropDownList2.SelectedIndexChanged
+        CostBox2.Text = "$" & DropDownList2.SelectedValue
+        Dim TotalValue As Integer
+        TotalValue = Convert.ToDouble(DropDownList1.SelectedValue) + Convert.ToDouble(DropDownList2.SelectedValue) + Convert.ToDouble(DropDownList3.SelectedValue) + Convert.ToDouble(DropDownList4.SelectedValue) + Convert.ToDouble(DropDownList5.SelectedValue) + Convert.ToDouble(DropDownList6.SelectedValue) + Convert.ToDouble(DropDownList7.SelectedValue) + Convert.ToDouble(DropDownList8.SelectedValue) + Convert.ToDouble(DropDownList9.SelectedValue) + Convert.ToDouble(DropDownList10.SelectedValue)
+        TotalBox.Text = "$" & TotalValue
+    End Sub
+
+    Protected Sub DropDownList3_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles DropDownList3.SelectedIndexChanged
+        CostBox3.Text = "$" & DropDownList3.SelectedValue
+        Dim TotalValue As Integer
+        TotalValue = Convert.ToDouble(DropDownList1.SelectedValue) + Convert.ToDouble(DropDownList2.SelectedValue) + Convert.ToDouble(DropDownList3.SelectedValue) + Convert.ToDouble(DropDownList4.SelectedValue) + Convert.ToDouble(DropDownList5.SelectedValue) + Convert.ToDouble(DropDownList6.SelectedValue) + Convert.ToDouble(DropDownList7.SelectedValue) + Convert.ToDouble(DropDownList8.SelectedValue) + Convert.ToDouble(DropDownList9.SelectedValue) + Convert.ToDouble(DropDownList10.SelectedValue)
+        TotalBox.Text = "$" & TotalValue
+    End Sub
+
+    Protected Sub DropDownList4_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles DropDownList4.SelectedIndexChanged
+        CostBox4.Text = "$" & DropDownList4.SelectedValue
+        Dim TotalValue As Integer
+        TotalValue = Convert.ToDouble(DropDownList1.SelectedValue) + Convert.ToDouble(DropDownList2.SelectedValue) + Convert.ToDouble(DropDownList3.SelectedValue) + Convert.ToDouble(DropDownList4.SelectedValue) + Convert.ToDouble(DropDownList5.SelectedValue) + Convert.ToDouble(DropDownList6.SelectedValue) + Convert.ToDouble(DropDownList7.SelectedValue) + Convert.ToDouble(DropDownList8.SelectedValue) + Convert.ToDouble(DropDownList9.SelectedValue) + Convert.ToDouble(DropDownList10.SelectedValue)
+        TotalBox.Text = "$" & TotalValue
+    End Sub
+
+    Protected Sub DropDownList5_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles DropDownList5.SelectedIndexChanged
+        CostBox5.Text = "$" & DropDownList5.SelectedValue
+        Dim TotalValue As Integer
+        TotalValue = Convert.ToDouble(DropDownList1.SelectedValue) + Convert.ToDouble(DropDownList2.SelectedValue) + Convert.ToDouble(DropDownList3.SelectedValue) + Convert.ToDouble(DropDownList4.SelectedValue) + Convert.ToDouble(DropDownList5.SelectedValue) + Convert.ToDouble(DropDownList6.SelectedValue) + Convert.ToDouble(DropDownList7.SelectedValue) + Convert.ToDouble(DropDownList8.SelectedValue) + Convert.ToDouble(DropDownList9.SelectedValue) + Convert.ToDouble(DropDownList10.SelectedValue)
+        TotalBox.Text = "$" & TotalValue
+    End Sub
+
+    Protected Sub DropDownList6_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles DropDownList6.SelectedIndexChanged
+        CostBox6.Text = "$" & DropDownList6.SelectedValue
+        Dim TotalValue As Integer
+        TotalValue = Convert.ToDouble(DropDownList1.SelectedValue) + Convert.ToDouble(DropDownList2.SelectedValue) + Convert.ToDouble(DropDownList3.SelectedValue) + Convert.ToDouble(DropDownList4.SelectedValue) + Convert.ToDouble(DropDownList5.SelectedValue) + Convert.ToDouble(DropDownList6.SelectedValue) + Convert.ToDouble(DropDownList7.SelectedValue) + Convert.ToDouble(DropDownList8.SelectedValue) + Convert.ToDouble(DropDownList9.SelectedValue) + Convert.ToDouble(DropDownList10.SelectedValue)
+        TotalBox.Text = "$" & TotalValue
+    End Sub
+
+    Protected Sub DropDownList7_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles DropDownList7.SelectedIndexChanged
+        CostBox7.Text = "$" & DropDownList7.SelectedValue
+        Dim TotalValue As Integer
+        TotalValue = Convert.ToDouble(DropDownList1.SelectedValue) + Convert.ToDouble(DropDownList2.SelectedValue) + Convert.ToDouble(DropDownList3.SelectedValue) + Convert.ToDouble(DropDownList4.SelectedValue) + Convert.ToDouble(DropDownList5.SelectedValue) + Convert.ToDouble(DropDownList6.SelectedValue) + Convert.ToDouble(DropDownList7.SelectedValue) + Convert.ToDouble(DropDownList8.SelectedValue) + Convert.ToDouble(DropDownList9.SelectedValue) + Convert.ToDouble(DropDownList10.SelectedValue)
+        TotalBox.Text = "$" & TotalValue
+    End Sub
+
+    Protected Sub DropDownList8_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles DropDownList8.SelectedIndexChanged
+        CostBox8.Text = "$" & DropDownList8.SelectedValue
+        Dim TotalValue As Integer
+        TotalValue = Convert.ToDouble(DropDownList1.SelectedValue) + Convert.ToDouble(DropDownList2.SelectedValue) + Convert.ToDouble(DropDownList3.SelectedValue) + Convert.ToDouble(DropDownList4.SelectedValue) + Convert.ToDouble(DropDownList5.SelectedValue) + Convert.ToDouble(DropDownList6.SelectedValue) + Convert.ToDouble(DropDownList7.SelectedValue) + Convert.ToDouble(DropDownList8.SelectedValue) + Convert.ToDouble(DropDownList9.SelectedValue) + Convert.ToDouble(DropDownList10.SelectedValue)
+        TotalBox.Text = "$" & TotalValue
+    End Sub
+
+    Protected Sub DropDownList9_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles DropDownList9.SelectedIndexChanged
+        CostBox9.Text = "$" & DropDownList9.SelectedValue
+        Dim TotalValue As Integer
+        TotalValue = Convert.ToDouble(DropDownList1.SelectedValue) + Convert.ToDouble(DropDownList2.SelectedValue) + Convert.ToDouble(DropDownList3.SelectedValue) + Convert.ToDouble(DropDownList4.SelectedValue) + Convert.ToDouble(DropDownList5.SelectedValue) + Convert.ToDouble(DropDownList6.SelectedValue) + Convert.ToDouble(DropDownList7.SelectedValue) + Convert.ToDouble(DropDownList8.SelectedValue) + Convert.ToDouble(DropDownList9.SelectedValue) + Convert.ToDouble(DropDownList10.SelectedValue)
+        TotalBox.Text = "$" & TotalValue
+    End Sub
+
+    Protected Sub DropDownList10_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles DropDownList10.SelectedIndexChanged
+        CostBox10.Text = "$" & DropDownList10.SelectedValue
+        Dim TotalValue As Integer
+        TotalValue = Convert.ToDouble(DropDownList1.SelectedValue) + Convert.ToDouble(DropDownList2.SelectedValue) + Convert.ToDouble(DropDownList3.SelectedValue) + Convert.ToDouble(DropDownList4.SelectedValue) + Convert.ToDouble(DropDownList5.SelectedValue) + Convert.ToDouble(DropDownList6.SelectedValue) + Convert.ToDouble(DropDownList7.SelectedValue) + Convert.ToDouble(DropDownList8.SelectedValue) + Convert.ToDouble(DropDownList9.SelectedValue) + Convert.ToDouble(DropDownList10.SelectedValue)
+        TotalBox.Text = "$" & TotalValue
+
+    End Sub
+
+    Protected Sub TotalBox_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles TotalBox.TextChanged
+
+    End Sub
+
+    Protected Sub Qty1_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Qty1.SelectedIndexChanged
+        TotalCost1.Text = "$" & (Qty1.SelectedValue * DropDownList1.SelectedValue)
+        Dim TotalValue As Integer
+        TotalValue = (Convert.ToDouble(Qty1.SelectedValue)) * (Convert.ToDouble(DropDownList1.SelectedValue)) + (Convert.ToDouble(Qty2.SelectedValue)) * (Convert.ToDouble(DropDownList2.SelectedValue)) + (Convert.ToDouble(Qty3.SelectedValue)) * (Convert.ToDouble(DropDownList3.SelectedValue)) + (Convert.ToDouble(Qty4.SelectedValue)) * (Convert.ToDouble(DropDownList4.SelectedValue)) + (Convert.ToDouble(Qty5.SelectedValue)) * (Convert.ToDouble(DropDownList5.SelectedValue)) + (Convert.ToDouble(Qty6.SelectedValue)) * (Convert.ToDouble(DropDownList6.SelectedValue)) + (Convert.ToDouble(Qty7.SelectedValue)) * (Convert.ToDouble(DropDownList7.SelectedValue)) + (Convert.ToDouble(Qty8.SelectedValue)) * (Convert.ToDouble(DropDownList8.SelectedValue)) + (Convert.ToDouble(Qty9.SelectedValue)) * (Convert.ToDouble(DropDownList9.SelectedValue)) + (Convert.ToDouble(Qty10.SelectedValue)) * (Convert.ToDouble(DropDownList10.SelectedValue))
+        TotalCostBox.Text = "$" & TotalValue
+    End Sub
+
+    Protected Sub Qty2_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Qty2.SelectedIndexChanged
+        TotalCost2.Text = "$" & (Qty2.SelectedValue * DropDownList2.SelectedValue)
+        Dim TotalValue As Integer
+        TotalValue = (Convert.ToDouble(Qty1.SelectedValue)) * (Convert.ToDouble(DropDownList1.SelectedValue)) + (Convert.ToDouble(Qty2.SelectedValue)) * (Convert.ToDouble(DropDownList2.SelectedValue)) + (Convert.ToDouble(Qty3.SelectedValue)) * (Convert.ToDouble(DropDownList3.SelectedValue)) + (Convert.ToDouble(Qty4.SelectedValue)) * (Convert.ToDouble(DropDownList4.SelectedValue)) + (Convert.ToDouble(Qty5.SelectedValue)) * (Convert.ToDouble(DropDownList5.SelectedValue)) + (Convert.ToDouble(Qty6.SelectedValue)) * (Convert.ToDouble(DropDownList6.SelectedValue)) + (Convert.ToDouble(Qty7.SelectedValue)) * (Convert.ToDouble(DropDownList7.SelectedValue)) + (Convert.ToDouble(Qty8.SelectedValue)) * (Convert.ToDouble(DropDownList8.SelectedValue)) + (Convert.ToDouble(Qty9.SelectedValue)) * (Convert.ToDouble(DropDownList9.SelectedValue)) + (Convert.ToDouble(Qty10.SelectedValue)) * (Convert.ToDouble(DropDownList10.SelectedValue))
+        TotalCostBox.Text = "$" & TotalValue
+    End Sub
+
+    Protected Sub Qty3_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Qty3.SelectedIndexChanged
+        TotalCost3.Text = "$" & (Qty3.SelectedValue * DropDownList3.SelectedValue)
+        Dim TotalValue As Integer
+        TotalValue = (Convert.ToDouble(Qty1.SelectedValue)) * (Convert.ToDouble(DropDownList1.SelectedValue)) + (Convert.ToDouble(Qty2.SelectedValue)) * (Convert.ToDouble(DropDownList2.SelectedValue)) + (Convert.ToDouble(Qty3.SelectedValue)) * (Convert.ToDouble(DropDownList3.SelectedValue)) + (Convert.ToDouble(Qty4.SelectedValue)) * (Convert.ToDouble(DropDownList4.SelectedValue)) + (Convert.ToDouble(Qty5.SelectedValue)) * (Convert.ToDouble(DropDownList5.SelectedValue)) + (Convert.ToDouble(Qty6.SelectedValue)) * (Convert.ToDouble(DropDownList6.SelectedValue)) + (Convert.ToDouble(Qty7.SelectedValue)) * (Convert.ToDouble(DropDownList7.SelectedValue)) + (Convert.ToDouble(Qty8.SelectedValue)) * (Convert.ToDouble(DropDownList8.SelectedValue)) + (Convert.ToDouble(Qty9.SelectedValue)) * (Convert.ToDouble(DropDownList9.SelectedValue)) + (Convert.ToDouble(Qty10.SelectedValue)) * (Convert.ToDouble(DropDownList10.SelectedValue))
+        TotalCostBox.Text = "$" & TotalValue
+    End Sub
+
+    Protected Sub Qty4_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Qty4.SelectedIndexChanged
+        TotalCost4.Text = "$" & (Qty4.SelectedValue * DropDownList4.SelectedValue)
+        Dim TotalValue As Integer
+        TotalValue = (Convert.ToDouble(Qty1.SelectedValue)) * (Convert.ToDouble(DropDownList1.SelectedValue)) + (Convert.ToDouble(Qty2.SelectedValue)) * (Convert.ToDouble(DropDownList2.SelectedValue)) + (Convert.ToDouble(Qty3.SelectedValue)) * (Convert.ToDouble(DropDownList3.SelectedValue)) + (Convert.ToDouble(Qty4.SelectedValue)) * (Convert.ToDouble(DropDownList4.SelectedValue)) + (Convert.ToDouble(Qty5.SelectedValue)) * (Convert.ToDouble(DropDownList5.SelectedValue)) + (Convert.ToDouble(Qty6.SelectedValue)) * (Convert.ToDouble(DropDownList6.SelectedValue)) + (Convert.ToDouble(Qty7.SelectedValue)) * (Convert.ToDouble(DropDownList7.SelectedValue)) + (Convert.ToDouble(Qty8.SelectedValue)) * (Convert.ToDouble(DropDownList8.SelectedValue)) + (Convert.ToDouble(Qty9.SelectedValue)) * (Convert.ToDouble(DropDownList9.SelectedValue)) + (Convert.ToDouble(Qty10.SelectedValue)) * (Convert.ToDouble(DropDownList10.SelectedValue))
+        TotalCostBox.Text = "$" & TotalValue
+    End Sub
+
+    Protected Sub Qty5_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Qty5.SelectedIndexChanged
+        TotalCost5.Text = "$" & (Qty5.SelectedValue * DropDownList5.SelectedValue)
+        Dim TotalValue As Integer
+        TotalValue = (Convert.ToDouble(Qty1.SelectedValue)) * (Convert.ToDouble(DropDownList1.SelectedValue)) + (Convert.ToDouble(Qty2.SelectedValue)) * (Convert.ToDouble(DropDownList2.SelectedValue)) + (Convert.ToDouble(Qty3.SelectedValue)) * (Convert.ToDouble(DropDownList3.SelectedValue)) + (Convert.ToDouble(Qty4.SelectedValue)) * (Convert.ToDouble(DropDownList4.SelectedValue)) + (Convert.ToDouble(Qty5.SelectedValue)) * (Convert.ToDouble(DropDownList5.SelectedValue)) + (Convert.ToDouble(Qty6.SelectedValue)) * (Convert.ToDouble(DropDownList6.SelectedValue)) + (Convert.ToDouble(Qty7.SelectedValue)) * (Convert.ToDouble(DropDownList7.SelectedValue)) + (Convert.ToDouble(Qty8.SelectedValue)) * (Convert.ToDouble(DropDownList8.SelectedValue)) + (Convert.ToDouble(Qty9.SelectedValue)) * (Convert.ToDouble(DropDownList9.SelectedValue)) + (Convert.ToDouble(Qty10.SelectedValue)) * (Convert.ToDouble(DropDownList10.SelectedValue))
+        TotalCostBox.Text = "$" & TotalValue
+    End Sub
+
+    Protected Sub Qty6_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Qty6.SelectedIndexChanged
+        TotalCost6.Text = "$" & (Qty6.SelectedValue * DropDownList6.SelectedValue)
+        Dim TotalValue As Integer
+        TotalValue = (Convert.ToDouble(Qty1.SelectedValue)) * (Convert.ToDouble(DropDownList1.SelectedValue)) + (Convert.ToDouble(Qty2.SelectedValue)) * (Convert.ToDouble(DropDownList2.SelectedValue)) + (Convert.ToDouble(Qty3.SelectedValue)) * (Convert.ToDouble(DropDownList3.SelectedValue)) + (Convert.ToDouble(Qty4.SelectedValue)) * (Convert.ToDouble(DropDownList4.SelectedValue)) + (Convert.ToDouble(Qty5.SelectedValue)) * (Convert.ToDouble(DropDownList5.SelectedValue)) + (Convert.ToDouble(Qty6.SelectedValue)) * (Convert.ToDouble(DropDownList6.SelectedValue)) + (Convert.ToDouble(Qty7.SelectedValue)) * (Convert.ToDouble(DropDownList7.SelectedValue)) + (Convert.ToDouble(Qty8.SelectedValue)) * (Convert.ToDouble(DropDownList8.SelectedValue)) + (Convert.ToDouble(Qty9.SelectedValue)) * (Convert.ToDouble(DropDownList9.SelectedValue)) + (Convert.ToDouble(Qty10.SelectedValue)) * (Convert.ToDouble(DropDownList10.SelectedValue))
+        TotalCostBox.Text = "$" & TotalValue
+    End Sub
+
+    Protected Sub Qty7_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Qty7.SelectedIndexChanged
+        TotalCost7.Text = "$" & (Qty7.SelectedValue * DropDownList7.SelectedValue)
+        Dim TotalValue As Integer
+        TotalValue = (Convert.ToDouble(Qty1.SelectedValue)) * (Convert.ToDouble(DropDownList1.SelectedValue)) + (Convert.ToDouble(Qty2.SelectedValue)) * (Convert.ToDouble(DropDownList2.SelectedValue)) + (Convert.ToDouble(Qty3.SelectedValue)) * (Convert.ToDouble(DropDownList3.SelectedValue)) + (Convert.ToDouble(Qty4.SelectedValue)) * (Convert.ToDouble(DropDownList4.SelectedValue)) + (Convert.ToDouble(Qty5.SelectedValue)) * (Convert.ToDouble(DropDownList5.SelectedValue)) + (Convert.ToDouble(Qty6.SelectedValue)) * (Convert.ToDouble(DropDownList6.SelectedValue)) + (Convert.ToDouble(Qty7.SelectedValue)) * (Convert.ToDouble(DropDownList7.SelectedValue)) + (Convert.ToDouble(Qty8.SelectedValue)) * (Convert.ToDouble(DropDownList8.SelectedValue)) + (Convert.ToDouble(Qty9.SelectedValue)) * (Convert.ToDouble(DropDownList9.SelectedValue)) + (Convert.ToDouble(Qty10.SelectedValue)) * (Convert.ToDouble(DropDownList10.SelectedValue))
+        TotalCostBox.Text = "$" & TotalValue
+    End Sub
+
+    Protected Sub Qty8_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Qty8.SelectedIndexChanged
+        TotalCost8.Text = "$" & (Qty8.SelectedValue * DropDownList8.SelectedValue)
+        Dim TotalValue As Integer
+        TotalValue = (Convert.ToDouble(Qty1.SelectedValue)) * (Convert.ToDouble(DropDownList1.SelectedValue)) + (Convert.ToDouble(Qty2.SelectedValue)) * (Convert.ToDouble(DropDownList2.SelectedValue)) + (Convert.ToDouble(Qty3.SelectedValue)) * (Convert.ToDouble(DropDownList3.SelectedValue)) + (Convert.ToDouble(Qty4.SelectedValue)) * (Convert.ToDouble(DropDownList4.SelectedValue)) + (Convert.ToDouble(Qty5.SelectedValue)) * (Convert.ToDouble(DropDownList5.SelectedValue)) + (Convert.ToDouble(Qty6.SelectedValue)) * (Convert.ToDouble(DropDownList6.SelectedValue)) + (Convert.ToDouble(Qty7.SelectedValue)) * (Convert.ToDouble(DropDownList7.SelectedValue)) + (Convert.ToDouble(Qty8.SelectedValue)) * (Convert.ToDouble(DropDownList8.SelectedValue)) + (Convert.ToDouble(Qty9.SelectedValue)) * (Convert.ToDouble(DropDownList9.SelectedValue)) + (Convert.ToDouble(Qty10.SelectedValue)) * (Convert.ToDouble(DropDownList10.SelectedValue))
+        TotalCostBox.Text = "$" & TotalValue
+    End Sub
+
+    Protected Sub Qty9_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Qty9.SelectedIndexChanged
+        TotalCost9.Text = "$" & (Qty9.SelectedValue * DropDownList9.SelectedValue)
+        Dim TotalValue As Integer
+        TotalValue = (Convert.ToDouble(Qty1.SelectedValue)) * (Convert.ToDouble(DropDownList1.SelectedValue)) + (Convert.ToDouble(Qty2.SelectedValue)) * (Convert.ToDouble(DropDownList2.SelectedValue)) + (Convert.ToDouble(Qty3.SelectedValue)) * (Convert.ToDouble(DropDownList3.SelectedValue)) + (Convert.ToDouble(Qty4.SelectedValue)) * (Convert.ToDouble(DropDownList4.SelectedValue)) + (Convert.ToDouble(Qty5.SelectedValue)) * (Convert.ToDouble(DropDownList5.SelectedValue)) + (Convert.ToDouble(Qty6.SelectedValue)) * (Convert.ToDouble(DropDownList6.SelectedValue)) + (Convert.ToDouble(Qty7.SelectedValue)) * (Convert.ToDouble(DropDownList7.SelectedValue)) + (Convert.ToDouble(Qty8.SelectedValue)) * (Convert.ToDouble(DropDownList8.SelectedValue)) + (Convert.ToDouble(Qty9.SelectedValue)) * (Convert.ToDouble(DropDownList9.SelectedValue)) + (Convert.ToDouble(Qty10.SelectedValue)) * (Convert.ToDouble(DropDownList10.SelectedValue))
+        TotalCostBox.Text = "$" & TotalValue
+    End Sub
+
+    Protected Sub Qty10_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles Qty10.SelectedIndexChanged
+        TotalCost10.Text = "$" & (Qty10.SelectedValue * DropDownList10.SelectedValue)
+        Dim TotalValue As Integer
+        TotalValue = (Convert.ToDouble(Qty1.SelectedValue)) * (Convert.ToDouble(DropDownList1.SelectedValue)) + (Convert.ToDouble(Qty2.SelectedValue)) * (Convert.ToDouble(DropDownList2.SelectedValue)) + (Convert.ToDouble(Qty3.SelectedValue)) * (Convert.ToDouble(DropDownList3.SelectedValue)) + (Convert.ToDouble(Qty4.SelectedValue)) * (Convert.ToDouble(DropDownList4.SelectedValue)) + (Convert.ToDouble(Qty5.SelectedValue)) * (Convert.ToDouble(DropDownList5.SelectedValue)) + (Convert.ToDouble(Qty6.SelectedValue)) * (Convert.ToDouble(DropDownList6.SelectedValue)) + (Convert.ToDouble(Qty7.SelectedValue)) * (Convert.ToDouble(DropDownList7.SelectedValue)) + (Convert.ToDouble(Qty8.SelectedValue)) * (Convert.ToDouble(DropDownList8.SelectedValue)) + (Convert.ToDouble(Qty9.SelectedValue)) * (Convert.ToDouble(DropDownList9.SelectedValue)) + (Convert.ToDouble(Qty10.SelectedValue)) * (Convert.ToDouble(DropDownList10.SelectedValue))
+        TotalCostBox.Text = "$" & TotalValue
+    End Sub
+    
+End Class
+
